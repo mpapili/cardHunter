@@ -63,7 +63,7 @@ def loopCheck(url, desc, prices):
 		    for price in prices:
 		        if "${0}".format(price.rstrip()) in lineToRead.lower():
 		            print "IT'S IN STOCK!"
-		            os.system('/usr/bin/mpg123 /home/mike/Downloads/plucky.mp3')
+		            os.system('mpg123 plucky.mp3')
 			    print "FOUND IN STOCK FOR:"
 			    for word in lineToRead.split(" "):
 			        if "$" in word:
